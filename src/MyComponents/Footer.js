@@ -14,7 +14,7 @@ export const Footer = () => {
         <img src="/todo-logo.png" alt="Logo" style={{ height: '20px', width: 'auto' }} />
       </div>
       <div className="footer-right">
-        Copyright &copy; My Todo List
+        <p>&copy; 2024 Todo App. All rights reserved.</p>
       </div>
     </footer>
   );

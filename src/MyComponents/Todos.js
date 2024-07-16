@@ -7,7 +7,7 @@ export const Todos = (props) => {
         maxHeight: '529px', 
         overflowY: 'scroll',
         border: '1px solid #ddd',
-      };
+    };
 
     return (
         <div className="todos" style={containerStyle}>

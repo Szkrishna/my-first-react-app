@@ -1,0 +1,58 @@
+/* Home.css */
+
+.home-container {
+    min-height: 529px;
+    max-height: 529px;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+    background-color: #f5f5f5;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('./todo-bg.jpg');
+    color: #fff;
+  }
+  
+  .home-header {
+    margin-bottom: 20px;
+  }
+  
+  .home-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .home-header p {
+    font-size: 1.2rem;
+  }
+  
+  .home-content {
+    margin: 20px 0;
+  }
+  
+  .home-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .home-content ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .home-content ul li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  
+  .home-footer {
+    margin-top: 20px;
+  }
+  
+  .home-footer p {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
