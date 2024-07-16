@@ -1,10 +1,11 @@
 import './App.css';
 import Header from './MyComponents/Header';
 import { Footer } from './MyComponents/Footer';
-import { Todos } from './MyComponents/Todos'
+import { Todos } from './MyComponents/Todos';
+import { useState } from "react";
 
 function App() {
-  let todos = [
+  const [todos, setTodos] = useState([
     {
       id: 1,
       title: 'Finish homework',
@@ -29,15 +30,18 @@ function App() {
       dueDate: '2024-06-28',
       priority: 'Low',
     }
-  ];
+  ]);
 
-  const onDelete = ()=>{
-    alert("This item is deleted");
+  const onDelete = (todo)=>{
+    alert("The item " + todo.title + " is deleted.");
+    setTodos(todos.filter((e)=>{
+      return e!==todo;
+    }));
   }
   return (
     <div className=" App">
       <Header title="My Todo List"/>
-      <Todos todos={todos} onDelete={onDelete} />
+      <Todos todos={todos} onDelete={onDelete}/>
       <Footer/>
     </div>
   );

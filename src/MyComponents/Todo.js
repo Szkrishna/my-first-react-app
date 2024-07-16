@@ -10,7 +10,7 @@ export const Todo = ({ todo, onDelete}) => {
         {todo.dueDate && <p>Due Date: {todo.dueDate}</p>}
         {todo.priority && <p>Priority: {todo.priority}</p>}
       </div>
-      <button type="button" class="btn btn-danger mb-3" onClick={onDelete}>Delete</button>
+      <button type="button" class="btn btn-danger mb-3" onClick={()=>onDelete(todo)}>Delete</button>
     </div>
   )
 }
